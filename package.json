@@ -1,0 +1,29 @@
+{
+  "name": "selin-nodejs-devchallenge",
+  "version": "1.0.0",
+  "description": "challenge task for online contest from Dmytro Selin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --timeout 10000",
+    "test-integration": "mocha  --require ./test-integration/mongo-helper ./test-integration/*"
+  },
+  "keywords": [
+    "devchallenge"
+  ],
+  "author": "Dmytro Selin",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^6.0.2",
+    "mocha-prepare": "^0.1.0",
+    "mongo-unit": "^1.4.4"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20"
+  }
+}
