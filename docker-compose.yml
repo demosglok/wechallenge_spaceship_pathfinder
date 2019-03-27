@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mongo:
+    image: "mongo"
+  api:
+    build: .
+    ports:
+     - "8080:3000"
+    depends_on:
+      - 'mongo'
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/wechallenge

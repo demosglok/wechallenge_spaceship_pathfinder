@@ -12,9 +12,9 @@ module.exports = (req, res) => {
 	try {
 		const shipId = req.query.spaceship;
 		const sector =  req.query.sector;
-		
+
 		if(shipId && sector) {
-			const pathes = findAllPathes(gateData, sector);		
+			const pathes = findAllPathes(gateData, sector);
 			const shipRequest = new SpaceshipRequestModel();
 			shipRequest.spaceshipId = shipId
 			shipRequest.sector = sector;
@@ -29,7 +29,7 @@ module.exports = (req, res) => {
 		} else if(!shipId) {
 			debug('Error, no shipId');
 			res.status(400);
-			res.json({error: 'shipId query parameter is not specified'})
+			res.json({error: 'spaceship query parameter is not specified'})
 		} else {
 			debug('Error, no sector');
 			res.status(400);

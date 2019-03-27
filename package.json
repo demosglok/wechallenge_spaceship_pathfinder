@@ -1,7 +1,7 @@
 {
-  "name": "selin-nodejs-devchallenge",
+  "name": "nodejs-devchallenge",
   "version": "1.0.0",
-  "description": "challenge task for online contest from Dmytro Selin",
+  "description": "challenge task for online contest from #######",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,7 +11,7 @@
   "keywords": [
     "devchallenge"
   ],
-  "author": "Dmytro Selin",
+  "author": "#########",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
