@@ -24,7 +24,7 @@ challenge task for wechallenge (devchallenge) contests. nodejs spaceships path f
  - npm test
  - npm run test-integration
 
-#notes
+# notes
   tests are very simplistics.
   only core functionality covered in unit contests
   only one query tested in integration tests
